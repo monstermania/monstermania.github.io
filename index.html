@@ -11,7 +11,7 @@
     
     <!--t is short for tic tac toe.-->
     <h1>Tic Tac Toe</h1>
-    <h3><span id="informationText">asd</span></h3>
+  
     <table id="tBoard" >
         <tr> 
             <td class="dataCell" id="0" onclick="zero()"></td>
@@ -29,9 +29,15 @@
             <td class="dataCell" id="8" onclick="eight()"></td>
         </tr>
     </table>
+    <h2>Player X Score:  <span id="XInformationText">0</span></h2>
+    <h2>Player O Score:  <span id="OInformationText">0</span></h2>
+    <h3>Player<span id="infoTurn" onclick="table()"> X</span> Turn</h3>
+    <h1><span id=youWin></span></h1>
+    <button id="checkSee" onclick="CheckWin()">Who Won?</button>
     <button id="resetBtn" onclick = "reset()">Reset</button>
-    <button id="check" onclick="XWin()"> Check and see who won!</button>
+   <!-- <button id="check" onclick="magic()"> Check and see who won!</button>-->
 <script src="game.js">
+
 
 </script>
 </body>
