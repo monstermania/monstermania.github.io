@@ -1,9 +1,9 @@
 td{
-    border: 2px black solid;
+    border: 2px white solid;
     height: 100px;
     width: 100px;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     font-family: "Comic Sans MS", cursive; 
     font-size:  70px;
     cursor: pointer;
@@ -11,8 +11,27 @@ td{
 
 #tBoard{
     border-collapse: collapse;
-    position: absolute;
-    left: 50%;
-    margin-left: -155px;
+    /* position: absolute;1 */
+    /* left: 50%; */
+    /* margin-left: -155px; */
     top:50px;
+    color:white;
+}
+
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/02/65/64/6557887aae97178.jpg") ;
+    height: 100vh;
+    width: auto;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
