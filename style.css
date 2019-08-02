@@ -4,9 +4,9 @@ td{
     width: 100px;
     text-align: center;
     /* vertical-align: middle; */
-    font-family: "Comic Sans MS", cursive; 
     font-size:  70px;
     cursor: pointer;
+    font-family: 'Space Mono', monospace;
 }
 
 #tBoard{
@@ -26,6 +26,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    /* font-family: 'Space Mono', monospace; */
+
 }
 
 main{
@@ -34,4 +36,5 @@ main{
     align-items: center;
     justify-content: center;
     align-content: center;
+    font-family: 'Space Mono', monospace;
 }
