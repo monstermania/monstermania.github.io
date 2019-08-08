@@ -1,4 +1,5 @@
            //const  horizontal = [0,1,2];
+        var clickedBoxes = 0;
         var Xpoints = 0;
         var Opoints = 0;
         var columnA = [
@@ -112,11 +113,13 @@ function zero(){
              var i = document.getElementById(TableId).innerHTML = X;
             playerX = false;
             document.getElementById('infoTurn').innerHTML = 'O';
+            clickedBoxes++;
                 }
         else if(playerX === false){    
         var i = document.getElementById(TableId).innerHTML = O;
         playerX = true;
             document.getElementById('infoTurn').innerHTML = 'X';
+            clickedBoxes++;
             }
         } 
     }
@@ -135,6 +138,7 @@ function zero(){
        document.getElementById(7).innerHTML = "";
        document.getElementById(8).innerHTML = "";
         document.getElementById('youWin').innerHTML = "";
+        clickedBoxes = 0;
     }
     function resetScores(){
         document.getElementById('XInformationText').innerHTML = 0;
@@ -259,8 +263,20 @@ function zero(){
                 setTimeout(() => {
                     OWon();
                 }, 300);   
+             }
+           else if(clickedBoxes < 9){
+                console.log('next move')
+           }
+           else{
+            setTimeout(() =>{
+            }, 300);
+            reset();
+               
 
-            }
+                alert('TIE!');
+              
+           
+           }
         }
         
             function XWon()
